@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_tykpUO80Ee6TbLzBdrBTxQ" name="Rules">
+  <units xsi:type="henshin:Rule" xmi:id="_tykpUe80Ee6TbLzBdrBTxQ" name="Constraint-Rule_c1">
+    <lhs xmi:id="_tykpUu80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykpU-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_tykpVO80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpVe80Ee6TbLzBdrBTxQ" outgoing="_tykpV-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpVu80Ee6TbLzBdrBTxQ" incoming="_tykpV-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <edges xmi:id="_tykpV-80Ee6TbLzBdrBTxQ" source="_tykpVe80Ee6TbLzBdrBTxQ" target="_tykpVu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykpWO80Ee6TbLzBdrBTxQ" origin="_tykpU-80Ee6TbLzBdrBTxQ" image="_tykpVe80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykpWe80Ee6TbLzBdrBTxQ" name="Repair-Rule_c1">
+    <lhs xmi:id="_tykpWu80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykpW-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpXO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Bank"/>
+      </nodes>
+      <formula xsi:type="henshin:Not" xmi:id="_tykpXe80Ee6TbLzBdrBTxQ">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_tykpXu80Ee6TbLzBdrBTxQ">
+          <conclusion xmi:id="_tykpX-80Ee6TbLzBdrBTxQ">
+            <nodes xmi:id="_tykpYO80Ee6TbLzBdrBTxQ" outgoing="_tykpYu80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Client"/>
+            </nodes>
+            <nodes xmi:id="_tykpYe80Ee6TbLzBdrBTxQ" incoming="_tykpYu80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Account"/>
+            </nodes>
+            <edges xmi:id="_tykpYu80Ee6TbLzBdrBTxQ" source="_tykpYO80Ee6TbLzBdrBTxQ" target="_tykpYe80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Client/has"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_tykpY-80Ee6TbLzBdrBTxQ" origin="_tykpW-80Ee6TbLzBdrBTxQ" image="_tykpYO80Ee6TbLzBdrBTxQ"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_tykpZO80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpZe80Ee6TbLzBdrBTxQ" outgoing="_tykpae80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpZu80Ee6TbLzBdrBTxQ" incoming="_tykpaO80Ee6TbLzBdrBTxQ _tykpae80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpZ-80Ee6TbLzBdrBTxQ" outgoing="_tykpaO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Bank"/>
+      </nodes>
+      <edges xmi:id="_tykpaO80Ee6TbLzBdrBTxQ" source="_tykpZ-80Ee6TbLzBdrBTxQ" target="_tykpZu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Bank/accounts"/>
+      </edges>
+      <edges xmi:id="_tykpae80Ee6TbLzBdrBTxQ" source="_tykpZe80Ee6TbLzBdrBTxQ" target="_tykpZu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykpau80Ee6TbLzBdrBTxQ" origin="_tykpW-80Ee6TbLzBdrBTxQ" image="_tykpZe80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpa-80Ee6TbLzBdrBTxQ" origin="_tykpXO80Ee6TbLzBdrBTxQ" image="_tykpZ-80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykpbO80Ee6TbLzBdrBTxQ" name="Constraint-Rule_c2">
+    <lhs xmi:id="_tykpbe80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykpbu80Ee6TbLzBdrBTxQ" outgoing="_tykpce80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpb-80Ee6TbLzBdrBTxQ" outgoing="_tykpcu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpcO80Ee6TbLzBdrBTxQ" incoming="_tykpce80Ee6TbLzBdrBTxQ _tykpcu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <edges xmi:id="_tykpce80Ee6TbLzBdrBTxQ" source="_tykpbu80Ee6TbLzBdrBTxQ" target="_tykpcO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+      <edges xmi:id="_tykpcu80Ee6TbLzBdrBTxQ" source="_tykpb-80Ee6TbLzBdrBTxQ" target="_tykpcO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_tykpc-80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpdO80Ee6TbLzBdrBTxQ" outgoing="_tykpd-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpde80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpdu80Ee6TbLzBdrBTxQ" incoming="_tykpd-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <edges xmi:id="_tykpd-80Ee6TbLzBdrBTxQ" source="_tykpdO80Ee6TbLzBdrBTxQ" target="_tykpdu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykpeO80Ee6TbLzBdrBTxQ" origin="_tykpbu80Ee6TbLzBdrBTxQ" image="_tykpdO80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpee80Ee6TbLzBdrBTxQ" origin="_tykpb-80Ee6TbLzBdrBTxQ" image="_tykpde80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpeu80Ee6TbLzBdrBTxQ" origin="_tykpcO80Ee6TbLzBdrBTxQ" image="_tykpdu80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykpe-80Ee6TbLzBdrBTxQ" name="Repair-Rule_c2">
+    <lhs xmi:id="_tykpfO80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykpfe80Ee6TbLzBdrBTxQ" outgoing="_tykpgO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpfu80Ee6TbLzBdrBTxQ" outgoing="_tykpge80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpf-80Ee6TbLzBdrBTxQ" incoming="_tykpgO80Ee6TbLzBdrBTxQ _tykpge80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <edges xmi:id="_tykpgO80Ee6TbLzBdrBTxQ" source="_tykpfe80Ee6TbLzBdrBTxQ" target="_tykpf-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+      <edges xmi:id="_tykpge80Ee6TbLzBdrBTxQ" source="_tykpfu80Ee6TbLzBdrBTxQ" target="_tykpf-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_tykpgu80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpg-80Ee6TbLzBdrBTxQ" outgoing="_tykphu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykphO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykphe80Ee6TbLzBdrBTxQ" incoming="_tykphu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <edges xmi:id="_tykphu80Ee6TbLzBdrBTxQ" source="_tykpg-80Ee6TbLzBdrBTxQ" target="_tykphe80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykph-80Ee6TbLzBdrBTxQ" origin="_tykpfe80Ee6TbLzBdrBTxQ" image="_tykpg-80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpiO80Ee6TbLzBdrBTxQ" origin="_tykpfu80Ee6TbLzBdrBTxQ" image="_tykphO80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpie80Ee6TbLzBdrBTxQ" origin="_tykpf-80Ee6TbLzBdrBTxQ" image="_tykphe80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykpiu80Ee6TbLzBdrBTxQ" name="Constraint-Rule_c3">
+    <lhs xmi:id="_tykpi-80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykpjO80Ee6TbLzBdrBTxQ" incoming="_tykpj-80Ee6TbLzBdrBTxQ _tykpkO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpje80Ee6TbLzBdrBTxQ" outgoing="_tykpj-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpju80Ee6TbLzBdrBTxQ" outgoing="_tykpkO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykpj-80Ee6TbLzBdrBTxQ" source="_tykpje80Ee6TbLzBdrBTxQ" target="_tykpjO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+      <edges xmi:id="_tykpkO80Ee6TbLzBdrBTxQ" source="_tykpju80Ee6TbLzBdrBTxQ" target="_tykpjO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_tykpke80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpku80Ee6TbLzBdrBTxQ" incoming="_tykple80Ee6TbLzBdrBTxQ _tykplu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpk-80Ee6TbLzBdrBTxQ" outgoing="_tykple80Ee6TbLzBdrBTxQ _tykpl-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykplO80Ee6TbLzBdrBTxQ" incoming="_tykpl-80Ee6TbLzBdrBTxQ" outgoing="_tykplu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykple80Ee6TbLzBdrBTxQ" source="_tykpk-80Ee6TbLzBdrBTxQ" target="_tykpku80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+      <edges xmi:id="_tykplu80Ee6TbLzBdrBTxQ" source="_tykplO80Ee6TbLzBdrBTxQ" target="_tykpku80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+      <edges xmi:id="_tykpl-80Ee6TbLzBdrBTxQ" source="_tykpk-80Ee6TbLzBdrBTxQ" target="_tykplO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/owns"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykpmO80Ee6TbLzBdrBTxQ" origin="_tykpjO80Ee6TbLzBdrBTxQ" image="_tykpku80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpme80Ee6TbLzBdrBTxQ" origin="_tykpje80Ee6TbLzBdrBTxQ" image="_tykpk-80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpmu80Ee6TbLzBdrBTxQ" origin="_tykpju80Ee6TbLzBdrBTxQ" image="_tykplO80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykpm-80Ee6TbLzBdrBTxQ" name="Repair-Rule_c3">
+    <lhs xmi:id="_tykpnO80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykpne80Ee6TbLzBdrBTxQ" incoming="_tykpoO80Ee6TbLzBdrBTxQ _tykpoe80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpnu80Ee6TbLzBdrBTxQ" outgoing="_tykpoO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpn-80Ee6TbLzBdrBTxQ" outgoing="_tykpoe80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykpoO80Ee6TbLzBdrBTxQ" source="_tykpnu80Ee6TbLzBdrBTxQ" target="_tykpne80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+      <edges xmi:id="_tykpoe80Ee6TbLzBdrBTxQ" source="_tykpn-80Ee6TbLzBdrBTxQ" target="_tykpne80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_tykpou80Ee6TbLzBdrBTxQ">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_tykpo-80Ee6TbLzBdrBTxQ">
+          <conclusion xmi:id="_tykppO80Ee6TbLzBdrBTxQ">
+            <nodes xmi:id="_tykppe80Ee6TbLzBdrBTxQ" outgoing="_tykpp-80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Client"/>
+            </nodes>
+            <nodes xmi:id="_tykppu80Ee6TbLzBdrBTxQ" incoming="_tykpp-80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Portfolio"/>
+            </nodes>
+            <edges xmi:id="_tykpp-80Ee6TbLzBdrBTxQ" source="_tykppe80Ee6TbLzBdrBTxQ" target="_tykppu80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Client/owns"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_tykpqO80Ee6TbLzBdrBTxQ" origin="_tykpnu80Ee6TbLzBdrBTxQ" image="_tykppe80Ee6TbLzBdrBTxQ"/>
+          <mappings xmi:id="_tykpqe80Ee6TbLzBdrBTxQ" origin="_tykpn-80Ee6TbLzBdrBTxQ" image="_tykppu80Ee6TbLzBdrBTxQ"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_tykpqu80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpq-80Ee6TbLzBdrBTxQ" incoming="_tykpru80Ee6TbLzBdrBTxQ _tykpr-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykprO80Ee6TbLzBdrBTxQ" outgoing="_tykpru80Ee6TbLzBdrBTxQ _tykpsO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykpre80Ee6TbLzBdrBTxQ" incoming="_tykpsO80Ee6TbLzBdrBTxQ" outgoing="_tykpr-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykpru80Ee6TbLzBdrBTxQ" source="_tykprO80Ee6TbLzBdrBTxQ" target="_tykpq-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/has"/>
+      </edges>
+      <edges xmi:id="_tykpr-80Ee6TbLzBdrBTxQ" source="_tykpre80Ee6TbLzBdrBTxQ" target="_tykpq-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+      <edges xmi:id="_tykpsO80Ee6TbLzBdrBTxQ" source="_tykprO80Ee6TbLzBdrBTxQ" target="_tykpre80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/owns"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykpse80Ee6TbLzBdrBTxQ" origin="_tykpne80Ee6TbLzBdrBTxQ" image="_tykpq-80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpsu80Ee6TbLzBdrBTxQ" origin="_tykpnu80Ee6TbLzBdrBTxQ" image="_tykprO80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykps-80Ee6TbLzBdrBTxQ" origin="_tykpn-80Ee6TbLzBdrBTxQ" image="_tykpre80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykptO80Ee6TbLzBdrBTxQ" name="Constraint-Rule_c4">
+    <lhs xmi:id="_tykpte80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykptu80Ee6TbLzBdrBTxQ" incoming="_tykpue80Ee6TbLzBdrBTxQ _tykpuu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpt-80Ee6TbLzBdrBTxQ" outgoing="_tykpue80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <nodes xmi:id="_tykpuO80Ee6TbLzBdrBTxQ" outgoing="_tykpuu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykpue80Ee6TbLzBdrBTxQ" source="_tykpt-80Ee6TbLzBdrBTxQ" target="_tykptu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+      <edges xmi:id="_tykpuu80Ee6TbLzBdrBTxQ" source="_tykpuO80Ee6TbLzBdrBTxQ" target="_tykptu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_tykpu-80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpvO80Ee6TbLzBdrBTxQ" incoming="_tykpv-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpve80Ee6TbLzBdrBTxQ" outgoing="_tykpv-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <nodes xmi:id="_tykpvu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykpv-80Ee6TbLzBdrBTxQ" source="_tykpve80Ee6TbLzBdrBTxQ" target="_tykpvO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykpwO80Ee6TbLzBdrBTxQ" origin="_tykptu80Ee6TbLzBdrBTxQ" image="_tykpvO80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpwe80Ee6TbLzBdrBTxQ" origin="_tykpt-80Ee6TbLzBdrBTxQ" image="_tykpve80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykpwu80Ee6TbLzBdrBTxQ" origin="_tykpuO80Ee6TbLzBdrBTxQ" image="_tykpvu80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykpw-80Ee6TbLzBdrBTxQ" name="Repair-Rule_c4">
+    <lhs xmi:id="_tykpxO80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykpxe80Ee6TbLzBdrBTxQ" incoming="_tykpyO80Ee6TbLzBdrBTxQ _tykpye80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpxu80Ee6TbLzBdrBTxQ" outgoing="_tykpyO80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <nodes xmi:id="_tykpx-80Ee6TbLzBdrBTxQ" outgoing="_tykpye80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykpyO80Ee6TbLzBdrBTxQ" source="_tykpxu80Ee6TbLzBdrBTxQ" target="_tykpxe80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+      <edges xmi:id="_tykpye80Ee6TbLzBdrBTxQ" source="_tykpx-80Ee6TbLzBdrBTxQ" target="_tykpxe80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_tykpyu80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykpy-80Ee6TbLzBdrBTxQ" incoming="_tykpzu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Account"/>
+      </nodes>
+      <nodes xmi:id="_tykpzO80Ee6TbLzBdrBTxQ" outgoing="_tykpzu80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <nodes xmi:id="_tykpze80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <edges xmi:id="_tykpzu80Ee6TbLzBdrBTxQ" source="_tykpzO80Ee6TbLzBdrBTxQ" target="_tykpy-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio/associates"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykpz-80Ee6TbLzBdrBTxQ" origin="_tykpxe80Ee6TbLzBdrBTxQ" image="_tykpy-80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykp0O80Ee6TbLzBdrBTxQ" origin="_tykpxu80Ee6TbLzBdrBTxQ" image="_tykpzO80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykp0e80Ee6TbLzBdrBTxQ" origin="_tykpx-80Ee6TbLzBdrBTxQ" image="_tykpze80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykp0u80Ee6TbLzBdrBTxQ" name="Constraint-Rule_c5">
+    <lhs xmi:id="_tykp0-80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykp1O80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_tykp1e80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykp1u80Ee6TbLzBdrBTxQ" incoming="_tykp2O80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <nodes xmi:id="_tykp1-80Ee6TbLzBdrBTxQ" outgoing="_tykp2O80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <edges xmi:id="_tykp2O80Ee6TbLzBdrBTxQ" source="_tykp1-80Ee6TbLzBdrBTxQ" target="_tykp1u80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/owns"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykp2e80Ee6TbLzBdrBTxQ" origin="_tykp1O80Ee6TbLzBdrBTxQ" image="_tykp1u80Ee6TbLzBdrBTxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tykp2u80Ee6TbLzBdrBTxQ" name="Repair-Rule_c5">
+    <lhs xmi:id="_tykp2-80Ee6TbLzBdrBTxQ" name="Lhs">
+      <nodes xmi:id="_tykp3O80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <nodes xmi:id="_tykp3e80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Bank"/>
+      </nodes>
+      <formula xsi:type="henshin:Not" xmi:id="_tykp3u80Ee6TbLzBdrBTxQ">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_tykp3-80Ee6TbLzBdrBTxQ">
+          <conclusion xmi:id="_tykp4O80Ee6TbLzBdrBTxQ">
+            <nodes xmi:id="_tykp4e80Ee6TbLzBdrBTxQ" incoming="_tykp4-80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Portfolio"/>
+            </nodes>
+            <nodes xmi:id="_tykp4u80Ee6TbLzBdrBTxQ" outgoing="_tykp4-80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Client"/>
+            </nodes>
+            <edges xmi:id="_tykp4-80Ee6TbLzBdrBTxQ" source="_tykp4u80Ee6TbLzBdrBTxQ" target="_tykp4e80Ee6TbLzBdrBTxQ">
+              <type href="bank.ecore#//Client/owns"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_tykp5O80Ee6TbLzBdrBTxQ" origin="_tykp3O80Ee6TbLzBdrBTxQ" image="_tykp4e80Ee6TbLzBdrBTxQ"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_tykp5e80Ee6TbLzBdrBTxQ" name="Rhs">
+      <nodes xmi:id="_tykp5u80Ee6TbLzBdrBTxQ" incoming="_tykp6u80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Portfolio"/>
+      </nodes>
+      <nodes xmi:id="_tykp5-80Ee6TbLzBdrBTxQ" incoming="_tykp6e80Ee6TbLzBdrBTxQ" outgoing="_tykp6u80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client"/>
+      </nodes>
+      <nodes xmi:id="_tykp6O80Ee6TbLzBdrBTxQ" outgoing="_tykp6e80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Bank"/>
+      </nodes>
+      <edges xmi:id="_tykp6e80Ee6TbLzBdrBTxQ" source="_tykp6O80Ee6TbLzBdrBTxQ" target="_tykp5-80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Bank/clients"/>
+      </edges>
+      <edges xmi:id="_tykp6u80Ee6TbLzBdrBTxQ" source="_tykp5-80Ee6TbLzBdrBTxQ" target="_tykp5u80Ee6TbLzBdrBTxQ">
+        <type href="bank.ecore#//Client/owns"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_tykp6-80Ee6TbLzBdrBTxQ" origin="_tykp3O80Ee6TbLzBdrBTxQ" image="_tykp5u80Ee6TbLzBdrBTxQ"/>
+    <mappings xmi:id="_tykp7O80Ee6TbLzBdrBTxQ" origin="_tykp3e80Ee6TbLzBdrBTxQ" image="_tykp6O80Ee6TbLzBdrBTxQ"/>
+  </units>
+</henshin:Module>

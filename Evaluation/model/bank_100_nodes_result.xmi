@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ASCII"?>
+<bank:Bank xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bank="http://www.example.org/bank" xsi:schemaLocation="http://www.example.org/bank bank.ecore">
+  <clients has="//@accounts.1 //@accounts.10" owns="//@portfolios.2 //@portfolios.11 //@portfolios.26 //@portfolios.7 //@portfolios.1" name="client_1"/>
+  <clients has="//@accounts.55" owns="//@portfolios.0" name="client_2"/>
+  <clients has="//@accounts.21" owns="//@portfolios.4 //@portfolios.22" name="client_3"/>
+  <clients has="//@accounts.6 //@accounts.36" owns="//@portfolios.6 //@portfolios.9" name="client_4"/>
+  <clients has="//@accounts.54" owns="//@portfolios.3" name="client_5"/>
+  <clients has="//@accounts.13" owns="//@portfolios.5 //@portfolios.13 //@portfolios.21" name="client_6"/>
+  <clients has="//@accounts.53" owns="//@portfolios.10" name="client_7"/>
+  <clients has="//@accounts.2" owns="//@portfolios.12 //@portfolios.0" name="client_8"/>
+  <clients has="//@accounts.4" owns="//@portfolios.16" name="client_9"/>
+  <clients has="//@accounts.52" name="client_10"/>
+  <clients has="//@accounts.51" owns="//@portfolios.7" name="client_11"/>
+  <clients has="//@accounts.50" name="client_12"/>
+  <clients has="//@accounts.49" owns="//@portfolios.9 //@portfolios.14" name="client_13"/>
+  <clients has="//@accounts.48" owns="//@portfolios.3" name="client_14"/>
+  <clients has="//@accounts.3" owns="//@portfolios.15 //@portfolios.3 //@portfolios.0" name="client_15"/>
+  <clients has="//@accounts.47" owns="//@portfolios.9" name="client_16"/>
+  <clients has="//@accounts.24" name="client_17"/>
+  <clients has="//@accounts.46" owns="//@portfolios.6" name="client_18"/>
+  <clients has="//@accounts.45" owns="//@portfolios.1 //@portfolios.19" name="client_19"/>
+  <clients has="//@accounts.8" name="client_20"/>
+  <clients has="//@accounts.15 //@accounts.23" owns="//@portfolios.20 //@portfolios.13" name="client_21"/>
+  <clients has="//@accounts.44" name="client_22"/>
+  <clients has="//@accounts.43" name="client_23"/>
+  <clients has="//@accounts.42" owns="//@portfolios.6" name="client_24"/>
+  <clients has="//@accounts.41" owns="//@portfolios.8" name="client_25"/>
+  <clients has="//@accounts.25" name="client_26"/>
+  <clients has="//@accounts.40" name="client_27"/>
+  <clients has="//@accounts.39" owns="//@portfolios.24" name="client_28"/>
+  <clients has="//@accounts.29 //@accounts.30 //@accounts.33" name="client_29"/>
+  <clients has="//@accounts.0" owns="//@portfolios.18" name="client_30"/>
+  <clients has="//@accounts.35" owns="//@portfolios.25" name="client_31"/>
+  <clients has="//@accounts.20" name="client_32"/>
+  <clients has="//@accounts.38" owns="//@portfolios.11" name="client_33"/>
+  <clients has="//@accounts.11" owns="//@portfolios.25 //@portfolios.23 //@portfolios.4" name="client_34"/>
+  <clients has="//@accounts.5" owns="//@portfolios.17 //@portfolios.8 //@portfolios.1" name="client_35"/>
+  <accounts id="1"/>
+  <accounts id="2"/>
+  <accounts id="3"/>
+  <accounts id="4"/>
+  <accounts id="5"/>
+  <accounts id="6"/>
+  <accounts id="7"/>
+  <accounts id="8"/>
+  <accounts id="9"/>
+  <accounts id="10"/>
+  <accounts id="11"/>
+  <accounts id="12"/>
+  <accounts id="13"/>
+  <accounts id="14"/>
+  <accounts id="15"/>
+  <accounts id="16"/>
+  <accounts id="17"/>
+  <accounts id="18"/>
+  <accounts id="19"/>
+  <accounts id="20"/>
+  <accounts id="21"/>
+  <accounts id="22"/>
+  <accounts id="23"/>
+  <accounts id="24"/>
+  <accounts id="25"/>
+  <accounts id="26"/>
+  <accounts id="27"/>
+  <accounts id="28"/>
+  <accounts id="29"/>
+  <accounts id="30"/>
+  <accounts id="31"/>
+  <accounts id="32"/>
+  <accounts id="33"/>
+  <accounts id="34"/>
+  <accounts id="35"/>
+  <accounts id="36"/>
+  <accounts id="37"/>
+  <accounts id="38"/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <accounts/>
+  <portfolios associates="//@accounts.14"/>
+  <portfolios/>
+  <portfolios associates="//@accounts.9"/>
+  <portfolios/>
+  <portfolios associates="//@accounts.37"/>
+  <portfolios associates="//@accounts.18 //@accounts.28"/>
+  <portfolios associates="//@accounts.7 //@accounts.17"/>
+  <portfolios associates="//@accounts.1 //@accounts.12"/>
+  <portfolios associates="//@accounts.27"/>
+  <portfolios/>
+  <portfolios/>
+  <portfolios/>
+  <portfolios associates="//@accounts.2 //@accounts.16"/>
+  <portfolios associates="//@accounts.15"/>
+  <portfolios/>
+  <portfolios associates="//@accounts.3 //@accounts.34"/>
+  <portfolios associates="//@accounts.4"/>
+  <portfolios associates="//@accounts.5"/>
+  <portfolios associates="//@accounts.0"/>
+  <portfolios/>
+  <portfolios/>
+  <portfolios associates="//@accounts.13"/>
+  <portfolios associates="//@accounts.26"/>
+  <portfolios/>
+  <portfolios associates="//@accounts.22"/>
+  <portfolios associates="//@accounts.11"/>
+  <portfolios associates="//@accounts.10"/>
+</bank:Bank>

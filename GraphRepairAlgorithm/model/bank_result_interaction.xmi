@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank:Bank xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bank="http://www.example.org/bank" xsi:schemaLocation="http://www.example.org/bank bank.ecore">
+  <clients has="//@accounts.0" owns="//@portfolios.0 //@portfolios.1" name="Leo"/>
+  <clients has="//@accounts.1" name="Mia"/>
+  <accounts id="1"/>
+  <accounts/>
+  <portfolios associates="//@accounts.0"/>
+  <portfolios/>
+</bank:Bank>

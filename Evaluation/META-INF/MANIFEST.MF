@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Evaluation
+Bundle-SymbolicName: Evaluation; singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ Bank,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.henshin.interpreter,
+ org.eclipse.emf.henshin.ocl2ac.model
